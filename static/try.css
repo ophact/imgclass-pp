@@ -1,0 +1,162 @@
+html {
+    box-sizing: border-box;
+    font-family: Raleway;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+header {
+    display: flexbox;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem;
+    background-color: #555;
+    color: white;
+}
+
+.header__heading {
+    display: inline;
+    font-size: 3rem;
+    padding: .5rem;
+}
+
+.header__links {
+    float: right;
+    padding: .5rem;
+}
+
+.header__link {
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.header__link.header__link--on {
+    color: black;
+    font-weight: bold;
+    cursor: default;
+}
+
+.main__heading {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.main__container {
+    padding: 1rem;
+}
+
+.main__interface {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main__left {
+    padding: 1rem;
+    position: relative;
+}
+
+.main__grid {
+    display: grid;
+    grid-template-columns: repeat(32, 1fr);
+    grid-template-rows: repeat(32, 1fr);
+    border: .1rem solid black;
+    width: 16rem;
+    height: 16rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main__cell {
+    /*width: 2.5rem;
+    height: 2.5rem;*/
+}
+
+.main__right {
+    padding: 2rem;
+}
+
+.main__right--heading {
+    font-size: 2.5rem;
+}
+
+.main__right--desc {
+    font-size: 1.5rem;
+}
+
+.main__right--others {
+    font-size: 1.5rem;
+}
+
+.main__right--pred {
+    font-weight: bold;
+}
+
+.main__right--form {
+    padding: 1rem;
+}
+
+.main__right--input {
+    display: none;
+}
+
+.main__right--label {
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+.main__right--go {
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #7a7;
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+.main__canvas {
+    opacity: 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+}
+
+.footer__heading {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.footer__desc {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.footer__tonb {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.footer__tonb--link {
+    color: white;
+}

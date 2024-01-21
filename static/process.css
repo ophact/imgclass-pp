@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box;
+    font-family: Raleway;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+header {
+    display: flexbox;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem;
+    background-color: #555;
+    color: white;
+}
+
+.header__heading {
+    display: inline;
+    font-size: 3rem;
+    padding: .5rem;
+}
+
+.header__links {
+    float: right;
+    padding: .5rem;
+}
+
+.header__link {
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.header__link.header__link--on {
+    color: black;
+    font-weight: bold;
+    cursor: default;
+}
+
+.main__heading {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.main__element {
+    display: grid;
+    grid-template-columns: calc(50% - 2rem) 4rem calc(50% - 2rem);
+    
+    height: 33rem;
+    position: relative;
+}
+
+.main__element--part {
+    padding: 2rem;
+    position: relative;
+    border-top: .4rem dashed #ccc;
+}
+
+.main__element--info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main__element--heading {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.main__element--desc {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.main__element--arrow {
+    width: 4rem;
+    display: block;
+    background-color: goldenrod;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+}
+
+.footer__heading {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.footer__desc {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.footer__tonb {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.footer__tonb--link {
+    color: white;
+}

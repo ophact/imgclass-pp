@@ -1,0 +1,166 @@
+html {
+    box-sizing: border-box;
+    font-family: Raleway;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+header {
+    display: flexbox;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem;
+    background-color: #555;
+    color: white;
+}
+
+.header__heading {
+    display: inline;
+    font-size: 3rem;
+    padding: .5rem;
+}
+
+.header__links {
+    float: right;
+    padding: .5rem;
+}
+
+.header__link {
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.header__link.header__link--on {
+    color: black;
+    font-weight: bold;
+    cursor: default;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    background-color: bisque;
+}
+
+.intro__hero--container {
+    margin: 5rem;
+}
+
+.intro__hero {
+    height: 40rem;
+    padding: 3rem;
+    border-color: goldenrod;
+    border-style: solid;
+    border-width: 1rem;
+    border-radius: 1rem;
+}
+
+.intro__right {
+    padding: 2rem;
+    padding-top: 4rem !important;
+}
+
+.intro__heading {
+    font-size: 5rem;
+}
+
+.intro__desc {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.intro__cta {
+    margin-top: 2rem;
+    text-decoration: none;
+    background-color: #555;
+    padding: 2rem;
+    border-radius: 7rem;
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.model {
+    padding: 2rem;
+}
+
+.model__heading {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.model__aspects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.model__aspect {
+    padding: 1rem;
+    position: relative;
+}
+
+.model__aspect--container {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: #77aa77;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.model__aspect--img {
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.model__aspect--heading {
+    font-size: 2rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+.model__aspect--desc {
+    font-size: 1.5rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+}
+
+.footer__heading {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.footer__desc {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.footer__tonb {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.footer__tonb--link {
+    color: white;
+}
